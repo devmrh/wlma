@@ -1,21 +1,27 @@
 <template>
-  <div id="app">
-    <calendar></calendar>
-  </div>
+	<div id="app">
+		 <Header></Header>
+    <home-page></home-page>
+	</div>
 </template>
 
-<script>
-import Calendar from './components/Calendar.vue'
-
-
-export default {
-  name: 'app',
-  components: {
-    Calendar
-  }
+<style>
+body {
+	direction: rtl;
 }
+</style>
+
+<script>
+import Header from "./layouts/Header.vue";
+import HomePage from './pages/HomePage.vue';
+export default {
+	name: "app",
+	components: {
+    Header,
+    HomePage
+	}
+};
 </script>
 
 <style>
-
 </style>
