@@ -32,8 +32,10 @@
 </template>
 <style  scoped>
 .city-list {
-	height: 350px;
-	overflow: auto;
+height: 350px;
+overflow: auto;
+position: absolute;
+padding: 0;
 }
 .city-info-container {
 	display: flex;

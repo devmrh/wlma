@@ -13,6 +13,7 @@ export const store = new Vuex.Store({
       check_out: '',
       count: 0
     },
+    offers: []
   },
 
   mutations: {

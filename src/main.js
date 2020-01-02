@@ -2,6 +2,10 @@ import App from "./App.vue";
 import Vue from "vue";
 import Vuex from "vuex";
 
+
+window.moment =require('moment');
+window.Jmoment = require('moment-jalaali')
+
 import { store } from "./store";
 
 window.axios = require("axios");
@@ -9,6 +13,9 @@ window.toastr = require("toastr");
 window.toastr.options = {
   positionClass: "toast-bottom-right"
 };
+
+window.Event = new Vue;
+
 import "@fortawesome/fontawesome-free/css/all.css";
 import "@fortawesome/fontawesome-free/js/all.js";
 import "../node_modules/toastr/build/toastr.min.css";
