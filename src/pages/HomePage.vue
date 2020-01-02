@@ -3,13 +3,9 @@
     <section class="hero parallax" id="hero">
       <div class="panels">
       <div class="container">
-        <div class="form-group">
           <calendar></calendar>
-        </div>
       </div>
-
       </div>
-
     </section>
     <section id="service"></section>
     <section id="customer"></section>
@@ -21,12 +17,14 @@
         background-image: url("https://www.alibaba.ir/images/hero/flight-bg.jpg");
 }
 .panels {
-background:
-rgba(0,0,0,.7);
 min-height: 320px;
-padding-top: 10%;
 position: relative;
-top: 144px;
+top: 112px;
+width: 60%;
+margin: 0 auto;
+border-radius: 14px;
+background-image: linear-gradient(
+rgba(0,0,0,.7), rgba(255, 255, 248, 0.23));
 }
 .parallax {
     height: 500px;
@@ -44,9 +42,19 @@ top: 144px;
 import Calendar from '../components/Calendar.vue';
 
 export default {
-	name: "home-page",
+  name: "home-page",
+  data() {
+    return {
+
+    }
+  },
 	components: {
     Calendar
-	}
+  },
+  mounted() {
+  },
+  methods: {
+
+  },
 };
 </script>

@@ -9,6 +9,7 @@
 body {
 	direction: rtl;
 }
+
 </style>
 
 <script>
